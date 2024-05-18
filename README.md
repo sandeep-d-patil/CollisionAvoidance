@@ -29,8 +29,12 @@ A simple solution could be given as first object in the sorted list of object.ce
 
  1. Consider three boxes as shown in the Figure below, the tallest object (right) and the next object (left) have at the same centers. But the length between the two objects’ top surfaces is 110mm which is greater than the height at which the robot traverses. This causes a collision between the robot and the topmost box.
 
+![case_1](/diagrams/case_1.png)
+
  2. Consider three boxes as shown in the figure below, the tallest object’s (right) center is lower than the next object (left) by 10mm. Here picking the object which higher object.center.z causes collision with the tallest object during the robot’s movement in the picking motion.
 Hence, an optimal solution should be able to predict objects which are at the topmost position and pick the box with highest height.
+
+![case_2](/diagrams/case_2.png)
 
 ## General steps of solution:
 
